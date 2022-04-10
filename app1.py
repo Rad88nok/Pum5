@@ -3,10 +3,11 @@
 import streamlit as st
 import pickle
 from datetime import datetime
+from pathlib import Path
 startTime = datetime.now()
 # import znanych nam bibliotek
 
-filename = "https://github.com/Rad88nok/Pum5/blob/531de1507757a86e13836e482ceb33c8456b922a/model.sv"
+filename = Path(__file__).parents[0] / 'model.sv'
 model = pickle.load(open(filename,'rb'))
 # otwieramy wcześniej wytrenowany model
 
