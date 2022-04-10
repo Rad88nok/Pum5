@@ -6,7 +6,7 @@ from datetime import datetime
 startTime = datetime.now()
 # import znanych nam bibliotek
 
-filename = "D:/Programy/anaconda3/Data/model.sv"
+filename = "model.sv"
 model = pickle.load(open(filename,'rb'))
 # otwieramy wcześniej wytrenowany model
 
