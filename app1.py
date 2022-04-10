@@ -7,7 +7,7 @@ from pathlib import Path
 startTime = datetime.now()
 # import znanych nam bibliotek
 
-filename = Path(__file__).parents[0] / 'model.sv'
+filename = Path(__file__) / 'model.sv'
 model = pickle.load(open(filename,'rb'))
 # otwieramy wcześniej wytrenowany model
 
